@@ -1,7 +1,7 @@
 const { cmd } = require('../command');
 const config = require('../config');
 
-const menuImg = "https://files.catbox.moe/025xe2.jpg";
+const menuImg = "https://files.catbox.moe/33zgtm.png";
 
 // PDF Bank
 const pdfBank = {
@@ -40,16 +40,14 @@ async (conn, mek, m, { from, reply }) => {
     try {
         let list = `*Pasindu Athukorala ICT* · *Study Assistant*\n─────────────────────────\n\n`;
         list += `📂 *PDF BANK & STUDY NOTES*\n─────────────────────────\n\n`;
-        list += `පහත දැක්වෙන Number එක reply කරන්න:\n`;
-        list += `_(Reply with the number to download PDF directly)_\n\n`;
+        list += `පහත දැක්වෙන Number වලට reply කරන්න:\n\n`;
 
         for (const num in pdfBank) {
             list += `${num} │❯◦ *${pdfBank[num].title}*\n`;
         }
 
-        list += `\n─────────────────────────\n`;
-        list += `_Example: Reply 1 to get "Introduction to ICT"` + "`\n\n`";
-        list += `*Pasindu Athukorala ICT Team* 📚`;
+        list += `\n─────────────────────────\n\n`;
+        list += `_Pasindu Athukorala ICT Team 📚_`;
 
         const sent = await conn.sendMessage(from, {
             image: { url: menuImg },
@@ -74,7 +72,7 @@ async function sendPDF(conn, from, pdf, quoted) {
         document: { url: pdf.url },
         mimetype: 'application/pdf',
         fileName: `${pdf.title}.pdf`,
-        caption: `*📚 ${pdf.title}*\n\n*Pasindu Athukorala ICT Team*`
+        caption: `*📚 ${pdf.title}*\n\n_Pasindu Athukorala ICT Team_`
     }, { quoted });
 
     await conn.sendMessage(from, { react: { text: "✅", key: quoted.key }});
