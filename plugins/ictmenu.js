@@ -1,5 +1,5 @@
-const { cmd } = require('../command');
-const config = require('../config');
+const { cmd } = require('../lib/command');
+const config = require('../settings');
 
 const menuImg = "https://files.catbox.moe/33zgtm.png";
 
