@@ -5,8 +5,8 @@ const menuImg = "https://files.catbox.moe/33zgtm.png";
 
 // PDF Bank
 const pdfBank = {
-    "1": { key: "lesson01", title: "Introduction to ICT", url: "https://files.catbox.moe/lesson01.pdf" },
-    "2": { key: "eoc", title: "Evolution Of ICT", url: "https://files.catbox.moe/eoc.pdf" },
+    "1": { key: "lesson01", title: "Introduction to ICT", url: "https://drive.google.com/file/d/11pQIQnXzP2hK6pc-PweMZBPLfgBxmzyq/view?usp=drivesdk" },
+    "2": { key: "eoc", title: "Evolution Of ICT", url: "https://drive.google.com/file/d/1gVLY8DP031dFCwyQ8BQo75s9UHgED_nz/view?usp=drivesdk" },
     "3": { key: "nettheory", title: "Networking Theory", url: "https://files.catbox.moe/nettheory.pdf" },
     "4": { key: "logicgate", title: "Logic Gates", url: "https://files.catbox.moe/logicgate.pdf" },
     "5": { key: "ospt1", title: "Operating System - Part 01", url: "https://files.catbox.moe/ospt1.pdf" },
